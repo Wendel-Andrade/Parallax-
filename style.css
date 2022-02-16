@@ -1,0 +1,85 @@
+html,
+body
+{
+    margin: 0;
+    font-family: 'Redressed', cursive;
+}
+*
+{
+    box-sizing: border-box;
+}
+html
+{
+    overflow: hidden;
+}
+body
+{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}
+header , .silco
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   transform-style: inherit;
+   height: 100vh;
+}
+.title
+{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em 4em;
+    font-size: 3em;
+}
+.content::before 
+{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(arcane.jpg);
+    background-size: cover;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+}
+main
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color:  #2f223e;;
+}
+article
+{
+    width: 90vw;
+    max-width: 980px;
+    padding: 6em 0;
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0.075em;
+    text-indent: 2em;
+    line-height: 1.8em;
+}
+.silco::before 
+{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(silco.jpg);
+    background-size: cover;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+}
